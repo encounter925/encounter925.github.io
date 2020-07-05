@@ -8,8 +8,31 @@
   
   <div align="center">
     <h3> Welcome! </h3>
+   
     <img src="http://api.520ya.cn/d.php" alt="Radam Picture" width="75%" height="55%">
-   </div>
+
+    <script src="http://www.sucaihuo.com/Public/js/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://www.52player.cn/demos/css/common.css">
+    <link rel="stylesheet" href="simpleplayer.css" type="text/css"/>
+    <script src="jquery.simpleplayer.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        var settings = {
+            progressbarWidth: '200px',
+            progressbarHeight: '5px',
+            progressbarColor: '#22ccff',
+            progressbarBGColor: '#eeeeee',
+            defaultVolume: 0.8
+        };
+        $(".player").player(settings);
+    });
+    </script>
+
+    <div style="margin-top:20px;">
+    <audio class="player" src="http://api.520ya.cn/y.php"> 你的浏览器不支持该音乐播放器 </audio>
+    </div>
+   
+  </div>
   
 </body>
 
