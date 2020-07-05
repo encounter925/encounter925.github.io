@@ -16,11 +16,13 @@
   </div>
 
   <div align="center">
-    <span> <img src="http://api.520ya.cn/d.php" alt="Radam Picture" width="75%" height="55%"> </span>
-    $("span").click(function(){
-        var src = "http://api.520ya.cn/d.php";    //新图片地址bai
-        $(this).find("img").attr("src",src);    //更换图片地址
-    });
+    <img src="http://api.520ya.cn/d.php" alt="Radam Picture" width="75%" height="55%">
+    <script>
+      function click(){
+          document.getElementById("image").src="http://api.520ya.cn/d.php";
+      }
+    </scrip>
+      
   </div>
   
   
