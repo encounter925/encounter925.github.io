@@ -20,13 +20,14 @@
   </div>  
   
   <script type="text/javascript">
-    // function fresh(){
-      // location.reload();
-      // window.parent.location.href='http://encounter925.github.io/';
-      // $("#picview").attr("src","http://api.520ya.cn/d.php")
-    // }   
     var picview = document.getElementById('picview');
-    picview.onclick = function(){this.src="https://cdn.jsdelivr.net/gh/ssrss/img/"+(Math.floor(Math.random()*(4600-1+1))+1)+".jpg";}
+    var randInt = Math.floor(Math.random()*(4814-1+1))+1;
+    var urlHead = "";
+
+    if(randInt <= 4693) {urlHead = "https://cdn.jsdelivr.net/gh/ssrss/img/";}
+    else if(randInt >4693 && randInt <= 4814) {urlHead = "https://cdn.jsdelivr.net/gh/ssrss/img1/";}
+
+    picview.onclick = function(){this.src = urlHead + randInt + ".jpg";}
   </script>
 
 </body>
