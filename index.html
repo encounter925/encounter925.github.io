@@ -16,9 +16,19 @@
   </div>
 
   <div align="center">
-    <img src="http://api.520ya.cn/d.php" alt="Radam Picture" width="75%" height="55%">     
+    <img id="picview" src="http://api.520ya.cn/d.php" alt="Radam Picture" width="75%" height="55%">     
   </div>  
   
+  <script type="text/javascript">
+    // function fresh(){
+      // location.reload();
+      // window.parent.location.href='http://encounter925.github.io/';
+      // $("#picview").attr("src","http://api.520ya.cn/d.php")
+    // }   
+    var picview = document.getElementById('picview');
+    picview.onclick = function(){this.src="https://cdn.jsdelivr.net/gh/ssrss/img/"+(Math.floor(Math.random()*(4600-1+1))+1)+".jpg";}
+  </script>
+
 </body>
 
 </html>
